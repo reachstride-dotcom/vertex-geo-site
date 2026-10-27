@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertex GEO - Shaded Black</title>
+    <style>
+        body {
+            background-color: #121212; /* Dark background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .logo-container {
+            background-color: #1a1a1a; /* Inner container background */
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .logo-container:hover {
+            box-shadow: 0 15px 45px rgba(0,0,0,0.9);
+        }
+
+        /* The key styling for the "black shade" effect */
+        .vertex-geo-logo {
+            width: 280px;
+            height: auto;
+            /* Monochromatic and shaded */
+            filter: grayscale(100%) brightness(0.65) drop-shadow(0px 0px 10px rgba(255,255,255,0.08));
+        }
+
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <!-- The modified monochrome and shaded logo -->
+        <img src="https://i.ibb.co/example/logo_shaded.png" alt="Vertex GEO Shaded Logo" class="vertex-geo-logo">
+    </div>
+</body>
+</html>
